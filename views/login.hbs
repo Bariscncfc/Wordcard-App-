@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Barış Can Çifçi">
+    <meta name="description" content="kelime kart uygulaması,wordcard,login">
+    <link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/1970/1970023.svg?token=exp=1611856826~hmac=96ccce10f13b4c26d5f791f8f2832e12" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/register.css">
+<link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/1639/1639290.svg?token=exp=1613754657~hmac=7943c796644e9a51497014dc15713901" type="image/x-icon"/>
+
+    <title>Giriş</title>
+</head>
+<body>
+    <div class="container">
+        <form  id="form" action="/auth/login" method="POST" class="form">
+            <h2>Giriş Yap</h2>
+            <div class="form-control">
+                <label for="email">Mail Adresi:</label>
+                <input type="text"  id="email" name="email" placeholder="mail adresi giriniz">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Şifre</label>
+                <input type="password"  id="password" name="password" placeholder="Şifrenizi giriniz">
+                <small>Error message</small>
+           
+            <button type="submit">Giriş Yap</button>
+        </form>
+         {{#if message}}
+     <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}
+    </div>
+
+</body>
+</html>

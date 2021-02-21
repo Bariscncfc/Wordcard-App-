@@ -1,0 +1,26 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "login page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "login"
+  ],
+  "author": "Barış Can Çifçi",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}
